@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/weather"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded"
+        android:text="Login"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/background_light"/>
+
+
+    <EditText
+        android:id="@+id/etx_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_login"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:hint="PASSWORD"
+        android:textColor="@android:color/background_light"
+        android:background="@drawable/input_shape"
+        android:maxLines="1"
+        android:textColorHint="@android:color/background_light"/>
+
+
+
+    <EditText
+        android:id="@+id/etx_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/etx_password"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:hint="USERNAME"
+        android:background="@drawable/input_shape"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@android:color/background_light"/>
+
+</RelativeLayout>
